@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Dashboard from './components/Dashboard/Dashboard';
+import "./App.css";
+import AddWidgetByCategoryModal from './components/AddWidgetByCategoryModal/AddWidgetByCategoryModal';
+import Header from './components/Header/Header';
 
 function App() {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header onSearch={handleSearch} />
+      <button className="add-widget-button" onClick={openModal}>Add Widget +</button>
+      <Dashboard searchQuery={searchQuery} />
+      <AddWidgetByCategoryModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 }

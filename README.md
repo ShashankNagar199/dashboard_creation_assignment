@@ -1,3 +1,27 @@
+## Getting Started
+
+Follow these instructions to set up and run the project on your local machine.
+
+### Prerequisites
+
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version X.X.X or later)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+
+### Installation
+
+1. **Unzip the Project Folder**:  
+   Download and unzip the project folder to your desired location.
+
+2. **Open the Project in Your IDE**:  
+   Open the unzipped project folder in [Visual Studio Code](https://code.visualstudio.com/) or your preferred IDE.
+
+3. **Install Dependencies**:  
+   Open your terminal or command prompt and navigate to the project directory. Run the following command to install all necessary dependencies:
+
+   ```bash
+   npm install
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

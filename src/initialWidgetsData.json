@@ -1,0 +1,41 @@
+[
+    {
+      "id": 1,
+      "category": "CSPM Executive Dashboard",
+      "widgets": [
+        {
+          "id": 101,
+          "name": "CSPM Cloud Accounts",
+          "text": "Manage Cloud Accounts"
+        },
+        {
+          "id": 102,
+          "name": "Cloud Accounts Risk Assessment",
+          "text": "Manage Cloud Accounts Risk Assessment"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "CWPP Dashboard",
+      "widgets": [
+        {
+          "id": 201,
+          "name": "CWPP A",
+          "text": "This is CWPP widget A"
+        }
+      ]
+    },
+      {
+        "id": 3,
+        "category": "Registry Scan",
+        "widgets": [
+          {
+            "id": 301,
+            "name": "Image Risk Assessment",
+            "text": "Image scanning"
+          }
+        ]
+      }
+  ]
+  
